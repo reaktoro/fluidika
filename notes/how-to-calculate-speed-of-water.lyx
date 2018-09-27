@@ -1,0 +1,186 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "palatino" "default"
+\font_sans "default" "default"
+\font_typewriter "tgcursor" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 1
+\output_sync_macro "\synctex=-1"
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_author "Allan M. M. Leal"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+How to calculate speed of water
+\end_layout
+
+\begin_layout Author
+Allan Leal
+\end_layout
+
+\begin_layout Standard
+The speed of water 
+\begin_inset Formula $w$
+\end_inset
+
+ (in m/s) is given by (see Table
+\begin_inset space ~
+\end_inset
+
+6.3 of Wagner and Pruss 2002):
+\begin_inset Formula 
+\begin{equation}
+w=\left[\frac{\partial p}{\partial\rho}\right]_{s}^{\frac{1}{2}}.
+\end{equation}
+
+\end_inset
+
+If we consider 
+\begin_inset Formula $p=p(\rho,s)$
+\end_inset
+
+, then:
+\begin_inset Formula 
+\begin{equation}
+dp=\left[\frac{\partial p}{\partial\rho}\right]_{s}d\rho+\left[\frac{\partial p}{\partial s}\right]_{\rho}ds.
+\end{equation}
+
+\end_inset
+
+From this differential equation, we write:
+\begin_inset Formula 
+\begin{align}
+\left[\frac{\partial p}{\partial T}\right]_{\rho} & =\left[\frac{\partial p}{\partial\rho}\right]_{s}\cancelto{0}{\left[\frac{\partial\rho}{\partial T}\right]_{\rho}}+\left[\frac{\partial p}{\partial s}\right]_{\rho}\left[\frac{\partial s}{\partial T}\right]_{\rho},\\
+\left[\frac{\partial p}{\partial\rho}\right]_{T} & =\left[\frac{\partial p}{\partial\rho}\right]_{s}\cancelto{1}{\left[\frac{\partial\rho}{\partial\rho}\right]_{T}}+\left[\frac{\partial p}{\partial s}\right]_{\rho}\left[\frac{\partial s}{\partial\rho}\right]_{T},
+\end{align}
+
+\end_inset
+
+which, after the above observation, becomes:
+\begin_inset Formula 
+\begin{align}
+\left[\frac{\partial p}{\partial T}\right]_{\rho} & =\left[\frac{\partial p}{\partial s}\right]_{\rho}\left[\frac{\partial s}{\partial T}\right]_{\rho},\\
+\left[\frac{\partial p}{\partial\rho}\right]_{T} & =\left[\frac{\partial p}{\partial\rho}\right]_{s}+\left[\frac{\partial p}{\partial s}\right]_{\rho}\left[\frac{\partial s}{\partial\rho}\right]_{T}.
+\end{align}
+
+\end_inset
+
+These two equations can be combined to obtain:
+\begin_inset Formula 
+\begin{equation}
+\boxed{\left[\frac{\partial p}{\partial\rho}\right]_{s}=\left[\frac{\partial p}{\partial\rho}\right]_{T}-\left[\frac{\partial p}{\partial T}\right]_{\rho}\left[\frac{\partial s}{\partial\rho}\right]_{T}\left[\frac{\partial s}{\partial T}\right]_{\rho}^{-1}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From Table
+\begin_inset space ~
+\end_inset
+
+6.3, it follows that:
+\begin_inset Formula 
+\begin{align}
+p & =\rho^{2}\left[\frac{\partial f}{\partial\rho}\right]_{T},\\
+s & =-\left[\frac{\partial f}{\partial T}\right]_{\rho},
+\end{align}
+
+\end_inset
+
+from which we can obtain:
+\begin_inset Formula 
+\begin{align}
+\left[\frac{\partial p}{\partial\rho}\right]_{T} & =2\rho\left[\frac{\partial f}{\partial\rho}\right]_{T}+\rho^{2}\left[\frac{\partial^{2}f}{\partial\rho^{2}}\right]_{TT},\\
+\left[\frac{\partial p}{\partial T}\right]_{\rho} & =\rho^{2}\left[\frac{\partial^{2}f}{\partial\rho\partial T}\right]_{T\rho},\\
+\left[\frac{\partial s}{\partial\rho}\right]_{T} & =-\left[\frac{\partial f}{\partial T\partial\rho}\right]_{\rho T},\\
+\left[\frac{\partial s}{\partial T}\right]_{\rho} & =-\left[\frac{\partial f}{\partial T^{2}}\right]_{\rho\rho},
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
