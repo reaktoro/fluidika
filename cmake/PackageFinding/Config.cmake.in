@@ -1,0 +1,16 @@
+# Recommended cmake macro use to write a cmake config file.
+@PACKAGE_INIT@
+
+# Ensure the cmake targets of the project have not been included yet.
+if(NOT TARGET @PROJECT_NAME@::@PROJECT_NAME@)
+
+    # Include the cmake targets of the project.
+    include("@PACKAGE_INSTALL_CONFIGDIR@/@PROJECT_NAME@Targets.cmake")
+
+    # Find all required public dependencies, those needed during run.
+    include(@PACKAGE_INSTALL_CONFIGDIR@/FindDeps/Public.cmake)
+
+endif()
+
+# Recommended check at the end of a cmake config file.
+check_required_components(@PROJECT_NAME@)

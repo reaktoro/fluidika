@@ -1,6 +1,12 @@
 # Build files
 build/
 
+# Conda related files
+environment.yml
+
+# vscode files
+.vscode/
+
 # Eclipse files
 .cproject
 .project
@@ -38,10 +44,3 @@ build/
 *.exe
 *.out
 *.app
-
-# Spreadsheet lock files
-.~*
-
-# Lyx backup files
-*.lyx\#
-*.lyx~

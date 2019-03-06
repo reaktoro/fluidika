@@ -1,0 +1,7 @@
+name: fluidika
+
+dependencies:
+  - cmake>=3.13
+  - gxx_linux-64=7.3.0  # [linux]
+  - ccache  # [unix]
+  - catch2
