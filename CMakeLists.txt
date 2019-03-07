@@ -11,7 +11,7 @@ include(CCache)
 project(Fluidika VERSION 0.1 LANGUAGES CXX)
 
 # The a brief description of the project
-set(PROJECT_BRIEF "A scientific C++ library for calculation of thermophysical properties of fluids")
+set(PROJECT_BRIEF "A C++ library for calculation of thermodynamic and electrostatic properties of pure fluids")
 
 # Include the cmake variables with values for installation directories
 include(GNUInstallDirs)
