@@ -22,53 +22,56 @@
 
 namespace Fluidika {
 
-struct WaterElectroProps;
-struct WaterThermoProps;
-struct WaterProps;
+// TODO: Implement class Water
 
-enum class WaterThermoModel;
-enum class WaterElectroModel;
-//
-//class WaterThermoModelParams;
-//class WaterThermoModelParamsWagnerPruss;
-//class WaterThermoModelParamsHGK;
-//
-//class WaterElectroModelParams;
-//class WaterElectroModelParamsJohnsonNorton;
-//
-//struct WaterThermoModelParamsWagnerPruss;
-//struct WaterThermoModelParamsHGK;
-//struct WaterThermoModelParams;
-//struct WaterElectroModelParamsJohnsonNorton;
-//struct WaterElectroModelParams;
-struct WaterModelParams;
+// struct WaterElectroProps;
+// struct WaterThermoProps;
+// struct WaterProps;
 
-// TODO Figure 11 in Johnson and Norton 1991 - reproduce
-/// The class for calculation of thermodynamic and electrostatic properties of water.
-class Water
-{
-public:
-    /// Construct a default Water instance.
-    Water();
+// enum class WaterThermoModel;
+// enum class WaterElectroModel;
+// //
+// //class WaterThermoModelParams;
+// //class WaterThermoModelParamsWagnerPruss;
+// //class WaterThermoModelParamsHGK;
+// //
+// //class WaterElectroModelParams;
+// //class WaterElectroModelParamsJohnsonNorton;
+// //
+// //struct WaterThermoModelParamsWagnerPruss;
+// //struct WaterThermoModelParamsHGK;
+// //struct WaterThermoModelParams;
+// //struct WaterElectroModelParamsJohnsonNorton;
+// //struct WaterElectroModelParams;
+// struct WaterModelParams;
 
-    auto setThermoModelWagnerPruss() -> void;
+// // TODO Figure 11 in Johnson and Norton 1991 - reproduce
+// /// The class for calculation of thermodynamic and electrostatic properties of water.
+// class Water
+// {
+// public:
+//     /// Construct a default Water instance.
+//     Water();
 
-    auto setThermoModelHGK() -> void;
+//     auto setThermoModelWagnerPruss() -> void;
 
-    auto setElectroModelModelJohnsonNorton() -> void;
+//     auto setThermoModelHGK() -> void;
 
-    auto thermoModel() const -> WaterThermoModel;
+//     auto setElectroModelModelJohnsonNorton() -> void;
 
-    auto electroModel() const -> WaterThermoModel;
+//     auto thermoModel() const -> WaterThermoModel;
 
-    auto thermoProps(RealConstRef T, RealConstRef P) const -> WaterThermoProps;
+//     auto electroModel() const -> WaterThermoModel;
 
-    auto electroProps(WaterThermoProps thermoprops) const -> WaterElectroProps;
+//     auto thermoProps(RealConstRef T, RealConstRef P) const -> WaterThermoProps;
 
-    auto props(RealConstRef T, RealConstRef P) const -> WaterProps;
+//     auto electroProps(WaterThermoProps thermoprops) const -> WaterElectroProps;
 
-    auto params() const -> const WaterModelParams;
+//     auto props(RealConstRef T, RealConstRef P) const -> WaterProps;
 
-private:
-};
+//     auto params() const -> const WaterModelParams;
+
+// private:
+// };
+
 } // namespace Fluidika
