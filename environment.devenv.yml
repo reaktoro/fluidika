@@ -6,3 +6,5 @@ dependencies:
   - gxx_linux-64=7.3.0  # [linux]
   - ccache  # [unix]
   - catch2
+  - pip:
+    - cget
