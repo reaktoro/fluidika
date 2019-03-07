@@ -1,12 +1,15 @@
+// C++ includes
 #include <iostream>
 using namespace std;
 
+// Fluidika includes
 #include <Fluidika/Fluidika.hpp>
 using namespace Fluidika;
 
 int main()
 {
-    auto props = waterThermoPropsWagnerPruss(300.0, 1.0e6);
+    // Calculate the thermodynamic properties of water at 300 K and 1 MPa (=1e6 Pa)
+    WaterThermoProps props = waterThermoPropsWagnerPruss(300.0, 1.0e6);
 
     cout << "The temperature of water (in units of K)" << endl;
     cout << props.temperature << endl;

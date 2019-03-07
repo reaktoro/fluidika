@@ -1,6 +1,6 @@
-// Fluidika is a scientific C++ library for calculation of thermophysical properties of fluids.
+// Fluidika is a C++ library for calculation of thermodynamic and electrostatic properties of pure fluids.
 //
-// Copyright (C) 2018 Allan Leal
+// Copyright (C) 2018-2019 Allan Leal and Reaktoro Contributors
 //
 // This library is free software; you can redistribute it and/or
 // modify it under the terms of the GNU Lesser General Public
