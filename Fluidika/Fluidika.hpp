@@ -15,3 +15,20 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with this library. If not, see <http://www.gnu.org/licenses/>.
 
+#pragma once
+
+// Fluidika includes
+#include <Fluidika/Common/Constants.hpp>
+#include <Fluidika/Common/Exception.hpp>
+#include <Fluidika/Common/Real.hpp>
+#include <Fluidika/Common/StateOfMatter.hpp>
+#include <Fluidika/Common/StringUtils.hpp>
+#include <Fluidika/Water/ElectroModels/HelgesonKirkham.hpp>
+#include <Fluidika/Water/ElectroModels/JohnsonNorton.hpp>
+#include <Fluidika/Water/ElectroModels/UematsuFranck.hpp>
+#include <Fluidika/Water/ThermoModels/HGK.hpp>
+#include <Fluidika/Water/ThermoModels/Utils.hpp>
+#include <Fluidika/Water/ThermoModels/WagnerPruss.hpp>
+#include <Fluidika/Water/Water.hpp>
+#include <Fluidika/Water/WaterData.hpp>
+#include <Fluidika/Water/WaterProps.hpp>
